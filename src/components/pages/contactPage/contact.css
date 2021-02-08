@@ -1,0 +1,27 @@
+.mainCont {
+    display: flex;
+    justify-content: center;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-top: 10vh;
+}
+
+.contactCard {
+    /* width: 24rem;
+    height: 24rem; */
+    align-items: center;
+    display: flex;
+}
+
+.contactItems {
+    margin-top: 2rem;
+}
+
+.cardHeader {
+    display: flex;
+    justify-content: center;
+}
+
+.avatar {
+    display: inline-block;
+}
