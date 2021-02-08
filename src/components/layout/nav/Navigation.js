@@ -3,7 +3,7 @@ import { Button, ButtonGroup } from "@material-ui/core";
 import "./nav.css";
 import { GiThorHammer } from "react-icons/gi";
 import { GrContactInfo } from "react-icons/gr";
-import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaAddressCard } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const Navigation = () => {
@@ -28,7 +28,7 @@ const Navigation = () => {
                 <Link to="/contact" className="navBtn">
                     <Button
                         variant="outlined"
-                        startIcon={<GrContactInfo />}
+                        startIcon={<FaAddressCard />}
                         className="navBtn"
                     >
                         Contact
@@ -36,8 +36,24 @@ const Navigation = () => {
                 </Link>
             </ButtonGroup>
 
-            <FaLinkedin style={{ marginLeft: "auto", marginRight: "10px" }} />
-            <FaGithub style={{ marginRight: "1rem" }} />
+            <a
+                href="https://www.linkedin.com/in/andrew-morrow-65a37b1a9/"
+                target="_blank"
+                style={{
+                    marginLeft: "auto",
+                    marginRight: "10px",
+                    color: "whitesmoke",
+                }}
+            >
+                <FaLinkedin />
+            </a>
+            <a
+                href="https://github.com/AndrewMorrow"
+                target="_blank"
+                style={{ marginRight: "1rem", color: "whitesmoke" }}
+            >
+                <FaGithub />
+            </a>
         </nav>
     );
 };
