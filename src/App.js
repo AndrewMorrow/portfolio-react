@@ -8,6 +8,7 @@ import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
 import { CssBaseline } from "@material-ui/core";
 import React from "react";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
+import Projects from "./components/pages/projects/Projects";
 
 function App() {
     const prefersDarkMode = useMediaQuery("(prefers-color-scheme: dark)");
@@ -33,6 +34,9 @@ function App() {
                             </Route>
                             <Route path="/contact">
                                 <Contact />
+                            </Route>
+                            <Route path="/projects">
+                                <Projects />
                             </Route>
                         </Switch>
                     </Router>

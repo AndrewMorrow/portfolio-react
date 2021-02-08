@@ -1,8 +1,8 @@
 .mainCont {
     display: flex;
     justify-content: center;
-    margin-left: 10vw;
-    margin-right: 10vw;
+    margin-left: 8vw;
+    margin-right: 8vw;
     margin-top: 10vh;
 }
 
@@ -14,7 +14,7 @@
 }
 
 .contactItems {
-    margin-top: 2rem;
+    margin-top: 2.5rem !important;
 }
 
 .cardHeader {
