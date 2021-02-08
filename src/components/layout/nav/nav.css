@@ -1,0 +1,18 @@
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.navBtn {
+    text-decoration: none !important;
+    text-transform: none !important;
+}
+
+.buttonGroup {
+    display: flex;
+}
+
+/* .contactIcons {
+    margin-left: auto;
+    margin-right: 1rem;
+} */
