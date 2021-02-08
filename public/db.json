@@ -13,7 +13,8 @@
             "mysql",
             "html",
             "css",
-            "javascript"
+            "javascript",
+            "node"
         ]
     }
 ]

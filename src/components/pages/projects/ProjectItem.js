@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import clsx from "clsx";
 import Card from "@material-ui/core/Card";
@@ -16,7 +16,13 @@ import ShareIcon from "@material-ui/icons/Share";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import MoreVertIcon from "@material-ui/icons/MoreVert";
 import { Container } from "@material-ui/core";
-import { FaGithub, FaExternalLinkSquareAlt } from "react-icons/fa";
+import {
+    FaGithub,
+    FaExternalLinkSquareAlt,
+    FaNodeJs,
+    FaHtml5,
+} from "react-icons/fa";
+import { SiMysql, SiJavascript } from "react-icons/si";
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -38,20 +44,37 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 
-const ProjectItem = ({ name, image, description, technologies }) => {
+const ProjectItem = ({ project }) => {
     const classes = useStyles();
     const [expanded, setExpanded] = React.useState(false);
+    const [techIcons, setTechIcons] = useState([]);
+    const { name, description, technologies, image } = project;
 
     const handleExpandClick = () => {
         setExpanded(!expanded);
     };
 
+    const checkIcons = (technologies) => {
+        technologies.map((tech) => {
+            switch (tech) {
+                case "html":
+                    setTechIcons(...techIcons, "FaHtml5");
+                default:
+                    return;
+            }
+        });
+    };
+
+    useEffect(() => {
+        // checkIcons();
+    }, []);
+
     return (
         <Card className={classes.root}>
-            <CardHeader title={`${name}`} subheader="September 14, 2016" />
+            <CardHeader title={name} subheader="September 14, 2016" />
             <CardMedia
                 className={classes.media}
-                image="/images/merrimentQuestSS_tiny.png"
+                image={image}
                 title="Merriment Quest"
             />
             <CardContent>

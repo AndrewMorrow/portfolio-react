@@ -1,19 +1,39 @@
 import React, { useState, useEffect } from "react";
 import ProjectItem from "./ProjectItem";
 import { Container, Grid } from "@material-ui/core";
-import data from "../../../assets/db.json";
 
 const Projects = () => {
-    const [projects, setProjects] = useState(data);
+    const [projects, setProjects] = useState([]);
+
+    const getData = async () => {
+        const res = await fetch("db.json", {
+            headers: {
+                "Content-Type": "application/json",
+                Accept: "application/json",
+            },
+        });
+        const data = await res.json();
+        setProjects(data);
+        // console.log(data);
+    };
+
+    useEffect(() => {
+        getData();
+    }, []);
 
     return (
         <div>
             <Container>
                 <Grid container>
                     <Grid item>
-                        {projects.map((project) => (
-                            <ProjectItem key={project.id} item={project} />
-                        ))}
+                        {projects &&
+                            projects.length > 0 &&
+                            projects.map((project) => (
+                                <ProjectItem
+                                    key={project.id}
+                                    project={project}
+                                />
+                            ))}
                     </Grid>
                 </Grid>
             </Container>
