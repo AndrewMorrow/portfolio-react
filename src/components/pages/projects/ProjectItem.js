@@ -22,8 +22,10 @@ import {
     FaNodeJs,
     FaHtml5,
     FaCss3Alt,
+    FaReact,
 } from "react-icons/fa";
 import { SiMysql, SiJavascript } from "react-icons/si";
+import { DiMaterializecss, DiMongodb } from "react-icons/di";
 import { Icon, InlineIcon } from "@iconify/react";
 import handlebarsIcon from "@iconify-icons/logos/handlebars";
 import expressIcon from "@iconify-icons/logos/express";
@@ -57,6 +59,10 @@ const ProjectItem = ({ project }) => {
     const [techIcons, setTechIcons] = useState([]);
     const { name, description, technologies, image } = project;
 
+    // const screenShot = require(`../../../assets/images/${image}.png`);
+
+    // console.log(screenShot);
+
     const handleExpandClick = () => {
         setExpanded(!expanded);
     };
@@ -86,6 +92,22 @@ const ProjectItem = ({ project }) => {
                         <SiJavascript
                             style={{ marginLeft: "1rem", marginBottom: "1rem" }}
                             size={30}
+                        />,
+                    ]);
+                case "react":
+                    return setTechIcons((state) => [
+                        ...state,
+                        <FaReact
+                            style={{ marginLeft: "1rem", marginBottom: "1rem" }}
+                            size={30}
+                        />,
+                    ]);
+                case "materialize":
+                    return setTechIcons((state) => [
+                        ...state,
+                        <DiMaterializecss
+                            style={{ marginLeft: "1rem", marginBottom: "1rem" }}
+                            size={40}
                         />,
                     ]);
                 case "node":
@@ -121,6 +143,14 @@ const ProjectItem = ({ project }) => {
                             height="25px"
                         />,
                     ]);
+                case "mongodb":
+                    return setTechIcons((state) => [
+                        ...state,
+                        <DiMongodb
+                            style={{ marginLeft: "1rem", marginBottom: "1rem" }}
+                            size={30}
+                        />,
+                    ]);
                 case "handlebars":
                     return setTechIcons((state) => [
                         ...state,
@@ -149,10 +179,9 @@ const ProjectItem = ({ project }) => {
         checkIcons();
     }, []);
 
-    console.log(techIcons);
     return (
         <Card className={classes.root}>
-            <CardHeader title={name} subheader="September 14, 2016" />
+            <CardHeader title={name} subheader="Group Project" />
             <CardMedia
                 className={classes.media}
                 image={image}
