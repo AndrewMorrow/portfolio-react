@@ -2,19 +2,19 @@
     {
         "id": "1",
         "name": "Merriment Quest",
-        "image": "merrimentQuestSS_tiny.png",
+        "image": "merrimentQuestSS",
         "description": "This is a full-stack group project app that utilizes express.js for routing, mySQL for the database, Sequelize as an ORM for data rigidity, axios for 3rd party API calls, lodash for data manipulation, Handlebars as the templating engine, bcrypt for password hashing, and dotenv for sensitive information.",
         "technologies": [
-            "express",
-            "handlebars",
-            "sequelize",
-            "axios",
-            "lodash",
-            "mysql",
             "html",
             "css",
             "javascript",
-            "node"
+            "node",
+            "express",
+            "handlebars",
+            "mysql",
+            "sequelize",
+            "axios",
+            "lodash"
         ]
     }
 ]
