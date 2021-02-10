@@ -15,7 +15,7 @@ import FavoriteIcon from "@material-ui/icons/Favorite";
 import ShareIcon from "@material-ui/icons/Share";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import MoreVertIcon from "@material-ui/icons/MoreVert";
-import { Container, Grid } from "@material-ui/core";
+import { Container } from "@material-ui/core";
 import {
     FaGithub,
     FaExternalLinkSquareAlt,
@@ -178,7 +178,6 @@ const ProjectItem = ({ project }) => {
     }, []);
 
     return (
-      <Grid container item xs={6} justify="center" alignItems="center">
         <Card className={classes.root}>
             <CardHeader title={name} subheader="Group Project" />
             <CardMedia
@@ -216,7 +215,6 @@ const ProjectItem = ({ project }) => {
                 </CardContent>
             </Collapse>
         </Card>
-      </Grid>
     );
 };
 

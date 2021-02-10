@@ -28,7 +28,11 @@ const Projects = () => {
                   {
                     projects &&
                     projects.length > 0 &&
-                    projects.map((project) => <ProjectItem key={project.id} project={project} /> )
+                    projects.map((project) => (
+                      <Grid container item xs={6} justify="center" alignItems="center">
+                        <ProjectItem key={project.id} project={project} />
+                      </Grid>
+                    ))
                   }
                 </Grid>
             </Container>
