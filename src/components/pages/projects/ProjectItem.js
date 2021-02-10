@@ -15,7 +15,7 @@ import FavoriteIcon from "@material-ui/icons/Favorite";
 import ShareIcon from "@material-ui/icons/Share";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import MoreVertIcon from "@material-ui/icons/MoreVert";
-import { Container } from "@material-ui/core";
+import { Container, Grid } from "@material-ui/core";
 import {
     FaGithub,
     FaExternalLinkSquareAlt,
@@ -31,11 +31,11 @@ import handlebarsIcon from "@iconify-icons/logos/handlebars";
 import expressIcon from "@iconify-icons/logos/express";
 import sequelizeIcon from "@iconify-icons/logos/sequelize";
 import lodashIcon from "@iconify-icons/logos/lodash";
-import merrimentQuestSS from "../../../assets/images/merrimentQuestSS_tiny.png";
 
 const useStyles = makeStyles((theme) => ({
     root: {
         maxWidth: 345,
+        minHeight: '100%',
     },
     media: {
         height: 0,
@@ -53,15 +53,13 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 
+const imageAssets = require.context('../../../assets/images', true, /.png$/);
+
 const ProjectItem = ({ project }) => {
     const classes = useStyles();
     const [expanded, setExpanded] = React.useState(false);
     const [techIcons, setTechIcons] = useState([]);
     const { name, description, technologies, image } = project;
-
-    // const screenShot = require(`../../../assets/images/${image}.png`);
-
-    // console.log(screenShot);
 
     const handleExpandClick = () => {
         setExpanded(!expanded);
@@ -180,11 +178,12 @@ const ProjectItem = ({ project }) => {
     }, []);
 
     return (
+      <Grid container item xs={6} justify="center" alignItems="center">
         <Card className={classes.root}>
             <CardHeader title={name} subheader="Group Project" />
             <CardMedia
                 className={classes.media}
-                image={image}
+                image={imageAssets(image).default}
                 title="Merriment Quest"
             />
             <CardContent>
@@ -217,6 +216,7 @@ const ProjectItem = ({ project }) => {
                 </CardContent>
             </Collapse>
         </Card>
+      </Grid>
     );
 };
 

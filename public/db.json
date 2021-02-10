@@ -2,7 +2,7 @@
     {
         "id": "1",
         "name": "Merriment Quest",
-        "image": "./images/merrimentQuestSS_tiny.png",
+        "image": "./merrimentQuestSS_tiny.png",
         "description": "This is a full-stack group project app that utilizes express.js for routing, mySQL for the database, Sequelize as an ORM for data rigidity, axios for 3rd party API calls, lodash for data manipulation, Handlebars as the templating engine, bcrypt for password hashing, and dotenv for sensitive information.",
         "technologies": [
             "html",
@@ -20,14 +20,14 @@
     {
         "id": "2",
         "name": "Food Group",
-        "image": "./images/merrimentQuestSS_tiny.png",
+        "image": "./merrimentQuestSS_tiny.png",
         "description": "This app is a recipe finder that utilizes HTML5, JavaScript, CSS, Google Maps API, and Materialize CSS framework for styling.",
         "technologies": ["html", "css", "javascript", "materialize"]
     },
     {
         "id": "3",
         "name": "The Tech Hound",
-        "image": "./images/merrimentQuestSS_tiny.png",
+        "image": "./merrimentQuestSS_tiny.png",
         "description": "This is a full-stack tech blog app that utilizes express.js for routing, mySQL for the database, Sequelize as an ORM for data rigidity, axios for 3rd party API calls, lodash for data manipulation, Handlebars as the templating engine, bcrypt for password hashing, and dotenv for sensitive information.",
         "technologies": [
             "html",
@@ -45,14 +45,14 @@
     {
         "id": "4",
         "name": "Employee Directory",
-        "image": "./images/merrimentQuestSS_tiny.png",
+        "image": "./merrimentQuestSS_tiny.png",
         "description": "Employee Directory app created with React.js that allows the user to filter employees by search and sort the employees by name and date of birth.",
         "technologies": ["html", "css", "javascript", "react"]
     },
     {
         "id": "5",
         "name": "PWA Budget",
-        "image": "./images/merrimentQuestSS_tiny.png",
+        "image": "./merrimentQuestSS_tiny.png",
         "description": "App that allows the user seamless experience if they happen to lose internet while using it. It utilizes service workers to handle offline functionality and indexedDB to store data while offline.",
         "technologies": [
             "html",
@@ -66,7 +66,7 @@
     {
         "id": "6",
         "name": "Contact Keeper",
-        "image": "./images/merrimentQuestSS_tiny.png",
+        "image": "./merrimentQuestSS_tiny.png",
         "description": "App that allows the user seamless experience if they happen to lose internet while using it. It utilizes service workers to handle offline functionality and indexedDB to store data while offline.",
         "technologies": [
             "html",

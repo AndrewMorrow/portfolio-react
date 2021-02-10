@@ -24,17 +24,12 @@ const Projects = () => {
     return (
         <div>
             <Container>
-                <Grid container>
-                    <Grid item>
-                        {projects &&
-                            projects.length > 0 &&
-                            projects.map((project) => (
-                                <ProjectItem
-                                    key={project.id}
-                                    project={project}
-                                />
-                            ))}
-                    </Grid>
+                <Grid container direction="row" spacing={6}>
+                  {
+                    projects &&
+                    projects.length > 0 &&
+                    projects.map((project) => <ProjectItem key={project.id} project={project} /> )
+                  }
                 </Grid>
             </Container>
         </div>
