@@ -35,7 +35,7 @@ import lodashIcon from "@iconify-icons/logos/lodash";
 const useStyles = makeStyles((theme) => ({
     root: {
         maxWidth: 345,
-        minHeight: '100%',
+        minHeight: "100%",
     },
     media: {
         height: 0,
@@ -53,7 +53,7 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 
-const imageAssets = require.context('../../../assets/images', true, /.png$/);
+const imageAssets = require.context("../../../assets/images", true, /.png$/);
 
 const ProjectItem = ({ project }) => {
     const classes = useStyles();
