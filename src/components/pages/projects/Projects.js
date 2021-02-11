@@ -32,9 +32,14 @@ const Projects = () => {
                             <Grid
                                 container
                                 item
-                                xs={6}
+                                zeroMinWidhth
+                                xs={12}
+                                sm={12}
+                                md={6}
+                                lg={6}
                                 justify="center"
                                 alignItems="center"
+                                alignContent="center"
                             >
                                 <ProjectItem
                                     key={project.id}

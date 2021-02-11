@@ -34,8 +34,8 @@ import lodashIcon from "@iconify-icons/logos/lodash";
 
 const useStyles = makeStyles((theme) => ({
     root: {
-        maxWidth: 345,
-        minHeight: "100%",
+        maxWidth: 350,
+        maxHeight: "100%",
     },
     media: {
         height: 0,
@@ -53,17 +53,13 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 
-const imageAssets = require.context("../../../assets/images", true, /.png$/);
+const imageAssets = require.context("../../../assets/images", true, /.gif$/);
 
 const ProjectItem = ({ project }) => {
     const classes = useStyles();
     const [expanded, setExpanded] = React.useState(false);
     const [techIcons, setTechIcons] = useState([]);
-    const { name, description, technologies, image } = project;
-
-    // const screenShot = require(image);
-
-    // console.log(screenShot);
+    const { name, description, technologies, image, subtitle } = project;
 
     const handleExpandClick = () => {
         setExpanded(!expanded);
@@ -182,8 +178,8 @@ const ProjectItem = ({ project }) => {
     }, []);
 
     return (
-        <Card className={classes.root}>
-            <CardHeader title={name} subheader="Group Project" />
+        <Card raised className={classes.root}>
+            <CardHeader title={name} subheader={subtitle} />
             <CardMedia
                 className={classes.media}
                 image={imageAssets(image).default}

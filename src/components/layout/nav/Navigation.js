@@ -5,10 +5,11 @@ import { GiThorHammer } from "react-icons/gi";
 import { GrContactInfo } from "react-icons/gr";
 import { FaLinkedin, FaGithub, FaAddressCard } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { AiTwotoneHome } from "react-icons/ai";
 
 const Navigation = () => {
     return (
-        <nav>
+        <nav className="navbar">
             <ButtonGroup
                 orientation="horizontal"
                 color="primary"
@@ -32,6 +33,11 @@ const Navigation = () => {
                         className="navBtn"
                     >
                         Contact
+                    </Button>
+                </Link>
+                <Link to="/" className="navBtn">
+                    <Button variant="outlined" className="navBtn">
+                        <AiTwotoneHome size={24} />
                     </Button>
                 </Link>
             </ButtonGroup>

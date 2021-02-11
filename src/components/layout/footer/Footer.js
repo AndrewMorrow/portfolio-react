@@ -4,9 +4,11 @@ import { Fab } from "@material-ui/core";
 
 const Footer = () => {
     return (
-        <Fab className="contactFab">
-            <ContactMailIcon />
-        </Fab>
+        <a href="mailto:beardedmongo@gmail.com">
+            <Fab className="contactFab" size="medium">
+                <ContactMailIcon fontSize="medium" />
+            </Fab>
+        </a>
     );
 };
 
