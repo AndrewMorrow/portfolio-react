@@ -59,7 +59,7 @@ const ProjectItem = ({ project }) => {
     const [techIcons, setTechIcons] = useState([]);
     const { name, description, technologies, image } = project;
 
-    // const screenShot = require(`../../../assets/images/${image}.png`);
+    // const screenShot = require(image);
 
     // console.log(screenShot);
 
@@ -184,7 +184,7 @@ const ProjectItem = ({ project }) => {
             <CardHeader title={name} subheader="Group Project" />
             <CardMedia
                 className={classes.media}
-                image={image}
+                image={merrimentQuestSS}
                 title="Merriment Quest"
             />
             <CardContent>
