@@ -61,6 +61,10 @@ const ProjectItem = ({ project }) => {
     const [techIcons, setTechIcons] = useState([]);
     const { name, description, technologies, image } = project;
 
+    // const screenShot = require(image);
+
+    // console.log(screenShot);
+
     const handleExpandClick = () => {
         setExpanded(!expanded);
     };

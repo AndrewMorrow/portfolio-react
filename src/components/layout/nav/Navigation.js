@@ -45,14 +45,14 @@ const Navigation = () => {
                     color: "whitesmoke",
                 }}
             >
-                <FaLinkedin />
+                <FaLinkedin size={20} />
             </a>
             <a
                 href="https://github.com/AndrewMorrow"
                 target="_blank"
                 style={{ marginRight: "1rem", color: "whitesmoke" }}
             >
-                <FaGithub />
+                <FaGithub size={20} />
             </a>
         </nav>
     );
