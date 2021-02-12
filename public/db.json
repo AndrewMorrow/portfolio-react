@@ -2,9 +2,11 @@
     {
         "id": "1",
         "name": "Merriment Quest",
-        "image": "./desktop-food-demo.gif",
+        "image": "./merrimentQuestSSHome_tiny.png",
         "description": "This is a video game suggestion app that also helps the user find the best deals on games.",
         "subtitle": "Full Stack",
+        "deploy": "https://merrimentquest.herokuapp.com/",
+        "repo": "https://github.com/AndrewMorrow/Merriment-Quest",
         "technologies": [
             "html",
             "css",
@@ -21,17 +23,21 @@
     {
         "id": "2",
         "name": "Food Group",
-        "image": "./desktop-food-demo.gif",
+        "image": "./foodGroupSSSearch_tiny.png",
         "description": "This app is a recipe finder app that allows the user to search for a recipe based on name.",
         "subtitle": "Front End",
+        "deploy": "https://andrewmorrow.github.io/Food-Group/",
+        "repo": "https://github.com/AndrewMorrow/Food-Group",
         "technologies": ["html", "css", "javascript", "materialize"]
     },
     {
         "id": "3",
         "name": "The Tech Hound",
-        "image": "./techHoundAllSS.gif",
+        "image": "./techHoundSSHome_tiny.png",
         "description": "This is a tech blog app where users can share thoghts about the latest technologies.",
         "subtitle": "Full Stack",
+        "deploy": "https://the-tech-hound.herokuapp.com/",
+        "repo": "https://github.com/AndrewMorrow/The-Tech-Hound",
         "technologies": [
             "html",
             "css",
@@ -48,15 +54,21 @@
     {
         "id": "4",
         "name": "Employee Directory",
-        "image": "./desktop-food-demo.gif",
+        "image": "./employeeDirectorySS_tiny.png",
         "description": "Employee Directory app where you can filter and sort users to narrow results.",
+        "subtitle": "Full Stack",
+        "deploy": "https://andrewmorrow.github.io/employee-directory-react/",
+        "repo": "https://github.com/AndrewMorrow/employee-directory-react",
         "technologies": ["html", "css", "javascript", "react"]
     },
     {
         "id": "5",
         "name": "PWA Budget",
-        "image": "./techHoundAllSS.gif",
+        "image": "./pwaBudgetSS(tiny).png",
         "description": "Budget app that allows the user seamless experience if they lose internet while using it.",
+        "subtitle": "Full Stack",
+        "deploy": "https://pwa-budget-36203.herokuapp.com/",
+        "repo": "https://github.com/AndrewMorrow/PWA_Budget",
         "technologies": [
             "html",
             "css",
@@ -68,9 +80,12 @@
     },
     {
         "id": "6",
-        "name": "Contact Keeper",
-        "image": "./techHoundAllSS.gif",
-        "description": "App that saves a users contacts and secures access to them from other users.",
+        "name": "Fitness Buddy",
+        "image": "./fitnessBuddySSDashboard_tiny.png",
+        "description": "App that saves workout data and displays a breakdown in a chart.",
+        "subtitle": "Full Stack",
+        "deploy": "https://fitness-tracker-36203.herokuapp.com/",
+        "repo": "https://github.com/AndrewMorrow/Fitness_Buddy",
         "technologies": [
             "html",
             "css",

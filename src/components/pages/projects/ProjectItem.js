@@ -53,13 +53,21 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 
-const imageAssets = require.context("../../../assets/images", true, /.gif$/);
+const imageAssets = require.context("../../../assets/images", true, /.png$/);
 
 const ProjectItem = ({ project }) => {
     const classes = useStyles();
     const [expanded, setExpanded] = React.useState(false);
     const [techIcons, setTechIcons] = useState([]);
-    const { name, description, technologies, image, subtitle } = project;
+    const {
+        name,
+        description,
+        technologies,
+        image,
+        subtitle,
+        repo,
+        deploy,
+    } = project;
 
     const handleExpandClick = () => {
         setExpanded(!expanded);
@@ -191,12 +199,17 @@ const ProjectItem = ({ project }) => {
                 </Typography>
             </CardContent>
             <CardActions disableSpacing>
-                <IconButton aria-label="add to favorites">
-                    <FaGithub />
-                </IconButton>
-                <IconButton aria-label="share">
-                    <FaExternalLinkSquareAlt />
-                </IconButton>
+                <a href={repo} target="_blank">
+                    <IconButton aria-label="add to favorites">
+                        <FaGithub />
+                    </IconButton>
+                </a>
+                <a href={deploy} target="_blank">
+                    <IconButton aria-label="share">
+                        <FaExternalLinkSquareAlt />
+                    </IconButton>
+                </a>
+
                 <IconButton
                     className={clsx(classes.expand, {
                         [classes.expandOpen]: expanded,
