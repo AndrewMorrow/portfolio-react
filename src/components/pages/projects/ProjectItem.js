@@ -31,6 +31,7 @@ import handlebarsIcon from "@iconify-icons/logos/handlebars";
 import expressIcon from "@iconify-icons/logos/express";
 import sequelizeIcon from "@iconify-icons/logos/sequelize";
 import lodashIcon from "@iconify-icons/logos/lodash";
+import "./projectItem.css";
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -161,7 +162,11 @@ const ProjectItem = ({ project }) => {
                     return setTechIcons((state) => [
                         ...state,
                         <Icon
-                            style={{ marginLeft: "1rem", marginBottom: "1rem" }}
+                            style={{
+                                marginLeft: "1rem",
+                                marginBottom: "1rem",
+                                fill: "blue",
+                            }}
                             icon={handlebarsIcon}
                             height="10px"
                         />,
@@ -222,7 +227,7 @@ const ProjectItem = ({ project }) => {
                 </IconButton>
             </CardActions>
             <Collapse in={expanded} timeout="auto" unmountOnExit>
-                <CardContent>
+                <CardContent className="iconContainer">
                     <Typography paragraph>Technologies:</Typography>
                     {techIcons && techIcons.map((icon) => icon)}
                 </CardContent>
