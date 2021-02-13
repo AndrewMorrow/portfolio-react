@@ -2,7 +2,6 @@ import React from "react";
 import { Button, ButtonGroup } from "@material-ui/core";
 import "./nav.css";
 import { GiThorHammer } from "react-icons/gi";
-import { GrContactInfo } from "react-icons/gr";
 import { FaLinkedin, FaGithub, FaAddressCard } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { AiTwotoneHome } from "react-icons/ai";
