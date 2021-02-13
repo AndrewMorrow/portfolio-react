@@ -39,6 +39,6 @@ This app does not utilize tests
 
 If there are further questions please contact me with the following.
 
-<img src = "assets/images/githubLogoCrop.png" alt= 'Github Logo' width="15px" height="15px"> AndrewMorrow- <a href="https://github.com/AndrewMorrow" target= "_blank">Github</a>
+<img src = "src/assets/images/githubLogoCrop.png" alt= 'Github Logo' width="15px" height="15px"> AndrewMorrow- <a href="https://github.com/AndrewMorrow" target= "_blank">Github</a>
 
 Email: beardedmongo@gmail.com
