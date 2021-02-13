@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/portfolio-react/static/css/main.9d6b77ca.chunk.css",
+    "main.js": "/portfolio-react/static/js/main.f491fbb0.chunk.js",
+    "main.js.map": "/portfolio-react/static/js/main.f491fbb0.chunk.js.map",
+    "runtime-main.js": "/portfolio-react/static/js/runtime-main.0f5864bc.js",
+    "runtime-main.js.map": "/portfolio-react/static/js/runtime-main.0f5864bc.js.map",
+    "static/js/2.5f84d6c1.chunk.js": "/portfolio-react/static/js/2.5f84d6c1.chunk.js",
+    "static/js/2.5f84d6c1.chunk.js.map": "/portfolio-react/static/js/2.5f84d6c1.chunk.js.map",
+    "index.html": "/portfolio-react/index.html",
+    "static/css/main.9d6b77ca.chunk.css.map": "/portfolio-react/static/css/main.9d6b77ca.chunk.css.map",
+    "static/js/2.5f84d6c1.chunk.js.LICENSE.txt": "/portfolio-react/static/js/2.5f84d6c1.chunk.js.LICENSE.txt",
+    "static/media/Andrew_Morrow_Resume-2020.65707992.pdf": "/portfolio-react/static/media/Andrew_Morrow_Resume-2020.65707992.pdf",
+    "static/media/employeeDirectorySS_tiny.png": "/portfolio-react/static/media/employeeDirectorySS_tiny.4f6ee9c5.png",
+    "static/media/fitnessBuddySSDashboard_tiny.png": "/portfolio-react/static/media/fitnessBuddySSDashboard_tiny.60c1e26f.png",
+    "static/media/foodGroupSSSearch_tiny.png": "/portfolio-react/static/media/foodGroupSSSearch_tiny.f7aec3f1.png",
+    "static/media/merrimentQuestSSHome_tiny.png": "/portfolio-react/static/media/merrimentQuestSSHome_tiny.a9386fbf.png",
+    "static/media/profileRoundFinal.png": "/portfolio-react/static/media/profileRoundFinal.a3bcdb75.png",
+    "static/media/pwaBudgetSS(tiny).png": "/portfolio-react/static/media/pwaBudgetSS(tiny).0b0afeb7.png",
+    "static/media/techHoundSSHome_tiny.png": "/portfolio-react/static/media/techHoundSSHome_tiny.d3606076.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0f5864bc.js",
+    "static/js/2.5f84d6c1.chunk.js",
+    "static/css/main.9d6b77ca.chunk.css",
+    "static/js/main.f491fbb0.chunk.js"
+  ]
+}

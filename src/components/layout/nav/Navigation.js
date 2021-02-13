@@ -48,17 +48,22 @@ const Navigation = () => {
                 style={{
                     marginLeft: "auto",
                     marginRight: "10px",
+                    marginTop: "4px",
                     color: "whitesmoke",
                 }}
             >
-                <FaLinkedin size={20} />
+                <FaLinkedin size={25} />
             </a>
             <a
                 href="https://github.com/AndrewMorrow"
                 target="_blank"
-                style={{ marginRight: "1rem", color: "whitesmoke" }}
+                style={{
+                    marginRight: "1rem",
+                    color: "whitesmoke",
+                    marginTop: "4px",
+                }}
             >
-                <FaGithub size={20} />
+                <FaGithub size={25} />
             </a>
         </nav>
     );

@@ -1,0 +1,10 @@
+a {
+    color: cyan;
+}
+
+a:visited {
+    color: lightcoral;
+}
+a:hover {
+    color: gold;
+}

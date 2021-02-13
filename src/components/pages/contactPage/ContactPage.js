@@ -6,12 +6,15 @@ import {
     CardActions,
     CardHeader,
     Avatar,
+    Button,
 } from "@material-ui/core";
 import "./contact.css";
 import { FaLinkedin, FaGithub, FaAddressCard } from "react-icons/fa";
 import { FiExternalLink } from "react-icons/fi";
 import { AiTwotoneMail } from "react-icons/ai";
 import avatarPic from "../../../assets/images/profileRoundFinal.png";
+import resume from "../../../assets/files/Andrew_Morrow_Resume-2020.pdf";
+import DescriptionIcon from "@material-ui/icons/Description";
 
 const ContactPage = () => {
     return (
@@ -61,6 +64,17 @@ const ContactPage = () => {
                             beardedmongo@gmail.com
                         </a>
                     </Typography>
+                    <div className="contactItems centered">
+                        <Button
+                            variant="contained"
+                            color="primary"
+                            endIcon={<DescriptionIcon />}
+                            href={resume}
+                            target="_blank"
+                        >
+                            View Resume
+                        </Button>
+                    </div>
                 </CardContent>
             </Card>
         </main>

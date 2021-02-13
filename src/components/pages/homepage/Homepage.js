@@ -6,9 +6,12 @@ import {
     Fab,
     Typography,
     Grid,
+    Icon,
 } from "@material-ui/core";
 import "./homepage.css";
 import RoundPic from "../../../assets/images/profileRoundFinal.png";
+import resume from "../../../assets/files/Andrew_Morrow_Resume-2020.pdf";
+import DescriptionIcon from "@material-ui/icons/Description";
 
 const Homepage = () => {
     return (
@@ -21,10 +24,10 @@ const Homepage = () => {
                     Web Developer
                 </Typography>
                 <div className="centered mt-sm">
-                    <img src={RoundPic} alt="" style={{ height: "70px" }} />
+                    <img src={RoundPic} alt="" style={{ height: "120px" }} />
                 </div>
                 <Grid container justify="center">
-                    <Grid item md={8} sm={10} xs={12}>
+                    <Grid className="centered" item md={8} sm={10} xs={12}>
                         <article>
                             <p className="centered bioStyle">
                                 Web developer looking to leverage development
@@ -41,6 +44,15 @@ const Homepage = () => {
                                 companies or clients. Do you have something to
                                 build?
                             </p>
+                            <Button
+                                variant="contained"
+                                color="primary"
+                                endIcon={<DescriptionIcon />}
+                                href={resume}
+                                target="_blank"
+                            >
+                                View Resume
+                            </Button>
                         </article>
                     </Grid>
                 </Grid>
