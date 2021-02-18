@@ -2,7 +2,7 @@
     "name": "portfolio-react",
     "version": "0.1.0",
     "private": true,
-    "homepage": "https://AndrewMorrow.github.io/portfolio-react",
+    "homepage": "https://andrewmorrow.github.io",
     "dependencies": {
         "@iconify-icons/logos": "^1.1.6",
         "@iconify/react": "^1.1.4",
@@ -20,7 +20,7 @@
         "build": "react-scripts build",
         "eject": "react-scripts eject",
         "predeploy": "npm run build",
-        "deploy": "gh-pages -d build"
+        "deploy": "gh-pages -b master -d build"
     },
     "eslintConfig": {
         "extends": [

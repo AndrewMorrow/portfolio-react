@@ -47,7 +47,7 @@ const ContactPage = () => {
                         Linkedin:
                         <a
                             style={{ marginLeft: "4px" }}
-                            href="www.linkedin.com/in/andrew-s-morrow"
+                            href="www.linkedin.com/in/andrewsmorrow"
                             target="_blank"
                         >
                             www.linkedin.com/in/andrew-s-morrow{" "}
