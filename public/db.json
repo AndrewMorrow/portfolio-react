@@ -86,12 +86,24 @@
         "subtitle": "Full Stack",
         "deploy": "https://fitness-tracker-36203.herokuapp.com/",
         "repo": "https://github.com/AndrewMorrow/Fitness_Buddy",
+        "technologies": ["html", "css", "javascript", "mongodb", "mongoose"]
+    },
+    {
+        "id": "7",
+        "name": "Google Books Search",
+        "image": "./googleBooksSS_Search_tiny.png",
+        "description": "App that allows user to search Google books and save favorites.",
+        "subtitle": "Full Stack",
+        "deploy": "https://google-books-react-36203.herokuapp.com/",
+        "repo": "https://github.com/AndrewMorrow/google-books-react",
         "technologies": [
             "html",
             "css",
             "javascript",
             "react",
             "mongodb",
+            "dotenv",
+            "express",
             "mongoose"
         ]
     }
