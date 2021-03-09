@@ -15,7 +15,13 @@ import FavoriteIcon from "@material-ui/icons/Favorite";
 import ShareIcon from "@material-ui/icons/Share";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import MoreVertIcon from "@material-ui/icons/MoreVert";
-import { Container } from "@material-ui/core";
+import {
+    Box,
+    Button,
+    ButtonGroup,
+    Container,
+    Tooltip,
+} from "@material-ui/core";
 import {
     FaGithub,
     FaExternalLinkSquareAlt,
@@ -32,15 +38,17 @@ import expressIcon from "@iconify-icons/logos/express";
 import sequelizeIcon from "@iconify-icons/logos/sequelize";
 import lodashIcon from "@iconify-icons/logos/lodash";
 import "./projectItem.css";
+import { Link } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
     root: {
-        maxWidth: 350,
+        maxWidth: 400,
         maxHeight: "100%",
     },
     media: {
-        height: 0,
-        paddingTop: "56.25%", // 16:9
+        height: "100%",
+        // paddingTop: "56.25%", // 16:9
+        paddingTop: "49%", // 16:9
     },
     expand: {
         transform: "rotate(0deg)",
@@ -51,6 +59,9 @@ const useStyles = makeStyles((theme) => ({
     },
     expandOpen: {
         transform: "rotate(180deg)",
+    },
+    iconBox: {
+        display: "inline-block",
     },
 }));
 
@@ -80,105 +91,112 @@ const ProjectItem = ({ project }) => {
                 case "html":
                     return setTechIcons((state) => [
                         ...state,
-                        <FaHtml5
-                            style={{ marginLeft: "1rem", marginBottom: "1rem" }}
-                            size={30}
-                        />,
+                        {
+                            icon: <FaHtml5 size={30} />,
+                            name: "HTML",
+                            url: "https://html.spec.whatwg.org/",
+                        },
                     ]);
                 case "css":
                     return setTechIcons((state) => [
                         ...state,
-                        <FaCss3Alt
-                            style={{ marginLeft: "1rem", marginBottom: "1rem" }}
-                            size={30}
-                        />,
+                        {
+                            icon: <FaCss3Alt size={30} />,
+                            name: "CSS",
+                            url:
+                                "https://www.w3.org/Style/CSS/Overview.en.html",
+                        },
                     ]);
                 case "javascript":
                     return setTechIcons((state) => [
                         ...state,
-                        <SiJavascript
-                            style={{ marginLeft: "1rem", marginBottom: "1rem" }}
-                            size={30}
-                        />,
+                        {
+                            icon: <SiJavascript size={30} />,
+                            name: "Javascript",
+                            url:
+                                "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+                        },
                     ]);
                 case "react":
                     return setTechIcons((state) => [
                         ...state,
-                        <FaReact
-                            style={{ marginLeft: "1rem", marginBottom: "1rem" }}
-                            size={30}
-                        />,
+                        {
+                            icon: <FaReact size={30} />,
+                            name: "React.js",
+                            url: "https://reactjs.org/",
+                        },
                     ]);
                 case "materialize":
                     return setTechIcons((state) => [
                         ...state,
-                        <DiMaterializecss
-                            style={{ marginLeft: "1rem", marginBottom: "1rem" }}
-                            size={40}
-                        />,
+                        {
+                            icon: <DiMaterializecss size={40} />,
+                            name: "Materialize",
+                            url: "https://materializecss.com/",
+                        },
                     ]);
                 case "node":
                     return setTechIcons((state) => [
                         ...state,
-                        <FaNodeJs
-                            style={{ marginLeft: "1rem", marginBottom: "1rem" }}
-                            size={30}
-                        />,
+                        {
+                            icon: <FaNodeJs size={30} />,
+                            name: "Node.js",
+                            url: "https://nodejs.org/en/",
+                        },
                     ]);
                 case "express":
                     return setTechIcons((state) => [
                         ...state,
-                        <Icon
-                            icon={expressIcon}
-                            style={{ marginLeft: "1rem", marginBottom: "1rem" }}
-                        />,
+                        {
+                            icon: <Icon icon={expressIcon} />,
+                            name: "Express.js",
+                            url: "https://expressjs.com/",
+                        },
                     ]);
                 case "mysql":
                     return setTechIcons((state) => [
                         ...state,
-                        <SiMysql
-                            style={{ marginLeft: "1rem", marginBottom: "1rem" }}
-                            size={30}
-                        />,
+                        {
+                            icon: <SiMysql size={30} />,
+                            name: "mySQL",
+                            url: "https://www.mysql.com/",
+                        },
                     ]);
                 case "sequelize":
                     return setTechIcons((state) => [
                         ...state,
-                        <Icon
-                            icon={sequelizeIcon}
-                            style={{ marginLeft: "1rem", marginBottom: "1rem" }}
-                            height="25px"
-                        />,
+                        {
+                            icon: <Icon icon={sequelizeIcon} height="25px" />,
+                            name: "Sequelize",
+                            url: "https://sequelize.org/",
+                        },
                     ]);
                 case "mongodb":
                     return setTechIcons((state) => [
                         ...state,
-                        <DiMongodb
-                            style={{ marginLeft: "1rem", marginBottom: "1rem" }}
-                            size={30}
-                        />,
+                        {
+                            icon: <DiMongodb size={30} />,
+                            name: "mongoDB",
+                            url: "https://www.mongodb.com/",
+                        },
                     ]);
                 case "handlebars":
                     return setTechIcons((state) => [
                         ...state,
-                        <Icon
-                            style={{
-                                marginLeft: "1rem",
-                                marginBottom: "1rem",
-                                fill: "blue",
-                            }}
-                            icon={handlebarsIcon}
-                            height="10px"
-                        />,
+                        {
+                            icon: <Icon icon={handlebarsIcon} height="10px" />,
+                            name: "Handlebars",
+                            url: "https://handlebarsjs.com/",
+                        },
                     ]);
                 case "lodash":
                     return setTechIcons((state) => [
                         ...state,
-                        <Icon
-                            style={{ marginLeft: "1rem", marginBottom: "1rem" }}
-                            icon={lodashIcon}
-                            height="25px"
-                        />,
+                        {
+                            icon: <Icon icon={lodashIcon} height="25px" />,
+                            name: "Lodash",
+                            url: "https://lodash.com/",
+                        },
                     ]);
                 default:
                     return;
@@ -193,27 +211,33 @@ const ProjectItem = ({ project }) => {
     return (
         <Card raised className={classes.root}>
             <CardHeader title={name} subheader={subtitle} />
-            <CardMedia
-                className={classes.media}
-                image={imageAssets(image).default}
-                title="Merriment Quest"
-            />
+            <a href={deploy} target="_blank">
+                <CardMedia
+                    className={classes.media}
+                    image={imageAssets(image).default}
+                    title="Merriment Quest"
+                />
+            </a>
             <CardContent>
                 <Typography variant="body2" color="textSecondary" component="p">
                     {description}
                 </Typography>
             </CardContent>
             <CardActions disableSpacing>
-                <a href={repo} target="_blank">
-                    <IconButton aria-label="add to favorites">
-                        <FaGithub />
-                    </IconButton>
-                </a>
-                <a href={deploy} target="_blank">
-                    <IconButton aria-label="share">
-                        <FaExternalLinkSquareAlt />
-                    </IconButton>
-                </a>
+                <Tooltip placement="bottom" title="Github Repo">
+                    <a href={repo} target="_blank">
+                        <IconButton aria-label="add to favorites">
+                            <FaGithub />
+                        </IconButton>
+                    </a>
+                </Tooltip>
+                <Tooltip placement="right" title="Deployed Link">
+                    <a href={deploy} target="_blank">
+                        <IconButton aria-label="share">
+                            <FaExternalLinkSquareAlt />
+                        </IconButton>
+                    </a>
+                </Tooltip>
 
                 <IconButton
                     className={clsx(classes.expand, {
@@ -228,8 +252,33 @@ const ProjectItem = ({ project }) => {
             </CardActions>
             <Collapse in={expanded} timeout="auto" unmountOnExit>
                 <CardContent className="iconContainer">
-                    <Typography paragraph>Technologies:</Typography>
-                    {techIcons && techIcons.map((icon) => icon)}
+                    <Typography
+                        align="center"
+                        style={{
+                            textDecoration: "underline",
+                            marginBottom: "4px",
+                        }}
+                    >
+                        Technologies
+                    </Typography>
+                    <Typography align="center" style={{ marginBottom: "1rem" }}>
+                        Click any icon to find out more!
+                    </Typography>
+                    {techIcons &&
+                        techIcons.map((icon) => (
+                            <Box className={classes.iconBox}>
+                                <Tooltip
+                                    placement="top"
+                                    arrow
+                                    title={icon.name}
+                                    style={{ marginBottom: "1rem" }}
+                                >
+                                    <Button href={icon.url} target="_blank">
+                                        {icon.icon}
+                                    </Button>
+                                </Tooltip>
+                            </Box>
+                        ))}
                 </CardContent>
             </Collapse>
         </Card>

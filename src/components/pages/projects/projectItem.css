@@ -1,3 +1,7 @@
 .iconContainer path {
     fill: white;
 }
+
+.svg {
+    margin: 0;
+}

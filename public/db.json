@@ -1,6 +1,27 @@
 [
     {
         "id": "1",
+        "name": "Cedar House Candles",
+        "image": "./cedarHouseCandlesSSHome_tiny.png",
+        "description": "This is a full-stack eCommerce app built with Reactjs for a client.",
+        "subtitle": "Full Stack",
+        "deploy": "https://cedar-house-candles-project.herokuapp.com/",
+        "repo": "https://github.com/AndrewMorrow/cedar-house-candles",
+        "technologies": [
+            "html",
+            "css",
+            "javascript",
+            "node",
+            "express",
+            "react",
+            "mongodb",
+            "mongoose",
+            "axios",
+            "lodash"
+        ]
+    },
+    {
+        "id": "2",
         "name": "Merriment Quest",
         "image": "./merrimentQuestSSHome_tiny.png",
         "description": "This is a video game suggestion app that also helps the user find the best deals on games.",
@@ -21,7 +42,7 @@
         ]
     },
     {
-        "id": "2",
+        "id": "3",
         "name": "Food Group",
         "image": "./foodGroupSSSearch_tiny.png",
         "description": "This app is a recipe finder app that allows the user to search for a recipe based on name.",
@@ -31,7 +52,7 @@
         "technologies": ["html", "css", "javascript", "materialize"]
     },
     {
-        "id": "3",
+        "id": "4",
         "name": "The Tech Hound",
         "image": "./techHoundSSHome_tiny.png",
         "description": "This is a tech blog app where users can share thoghts about the latest technologies.",
@@ -52,7 +73,7 @@
         ]
     },
     {
-        "id": "4",
+        "id": "5",
         "name": "Employee Directory",
         "image": "./employeeDirectorySS_tiny.png",
         "description": "Employee Directory app where you can filter and sort users to narrow results.",
@@ -62,7 +83,7 @@
         "technologies": ["html", "css", "javascript", "react"]
     },
     {
-        "id": "5",
+        "id": "6",
         "name": "PWA Budget",
         "image": "./pwaBudgetSS(tiny).png",
         "description": "Budget app that allows the user seamless experience if they lose internet while using it.",
@@ -79,7 +100,7 @@
         ]
     },
     {
-        "id": "6",
+        "id": "7",
         "name": "Fitness Buddy",
         "image": "./fitnessBuddySSDashboard_tiny.png",
         "description": "App that saves workout data and displays a breakdown in a chart.",
@@ -89,7 +110,7 @@
         "technologies": ["html", "css", "javascript", "mongodb", "mongoose"]
     },
     {
-        "id": "7",
+        "id": "8",
         "name": "Google Books Search",
         "image": "./googleBooksSS_Search_tiny.png",
         "description": "App that allows user to search Google books and save favorites.",
