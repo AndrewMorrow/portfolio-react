@@ -14,11 +14,17 @@ body {
     background-size: cover;
 }
 
-.contactFab {
+/* .contactFab {
     position: fixed !important;
     bottom: 1rem;
     right: 1rem;
 }
+
+.resumeFab {
+    position: fixed !important;
+    bottom: 4rem;
+    right: 1rem;
+} */
 
 .headingText {
     margin-top: 2rem;

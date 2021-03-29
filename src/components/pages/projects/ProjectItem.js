@@ -42,7 +42,7 @@ import { Link } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
     root: {
-        maxWidth: 400,
+        maxWidth: 350,
         maxHeight: "100%",
     },
     media: {
@@ -215,7 +215,7 @@ const ProjectItem = ({ project }) => {
                 <CardMedia
                     className={classes.media}
                     image={imageAssets(image).default}
-                    title="Merriment Quest"
+                    title={name}
                 />
             </a>
             <CardContent>

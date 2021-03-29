@@ -8,3 +8,26 @@ a:visited {
 a:hover {
     color: gold;
 }
+
+footer {
+    position: relative;
+    height: 15vh;
+}
+
+main {
+    height: 80vh;
+    display: flex;
+    place-items: center;
+}
+
+.contactFab {
+    position: fixed !important;
+    bottom: 1rem;
+    right: 1rem;
+}
+
+.resumeFab {
+    position: fixed !important;
+    bottom: 4rem;
+    right: 1rem;
+}

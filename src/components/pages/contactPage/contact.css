@@ -1,16 +1,8 @@
-.mainCont {
-    display: flex;
-    justify-content: center;
-    margin-left: 8vw;
-    margin-right: 8vw;
-    margin-top: 10vh;
-}
-
 .contactCard {
+    display: flex;
     /* width: 24rem;
     height: 24rem; */
-    align-items: center;
-    display: flex;
+    place-items: center;
 }
 
 .contactItems {
