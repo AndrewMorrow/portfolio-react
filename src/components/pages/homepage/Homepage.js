@@ -10,7 +10,7 @@ import {
 } from "@material-ui/core";
 import "./homepage.css";
 import RoundPic from "../../../assets/images/profileRoundFinal.png";
-import resume from "../../../assets/files/Andrew_Morrow_Resume-2021.pdf";
+import resume from "../../../assets/files/Resume_2022.pdf";
 import DescriptionIcon from "@material-ui/icons/Description";
 
 const Homepage = () => {
